@@ -1,0 +1,312 @@
+.container {
+    display: grid;
+    width: 80%;
+    height: 100%;
+    margin: auto;
+    grid-template-rows: 130px 60px 330px auto 150px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "head head head"
+    "nav nav nav"
+    "main main main"
+    "main2 main2 main2"
+    "foot foot foot";
+    grid-gap: 10px;
+    
+   
+}
+
+.box {
+    
+    align-items: center;
+    justify-content: center;
+    
+    
+}
+
+#header {
+
+    display: flex;
+    grid-area: head;
+    font-family: 'Passion One', cursive;
+    text-shadow: 4px 4px #000000;
+    color: #1fa9c4;
+    font-size: 32px;
+
+}
+
+#navbar {
+
+    display: flex;
+    grid-area: nav;
+    font-family: 'Passion One', cursive;
+    font-size: 18px;
+
+}
+
+.navbuttons, a {
+
+    margin: 20px;
+    text-decoration: none;
+    color: #1fa9c4;
+    display: flex;
+}
+
+#pic {
+    
+    grid-area: main;
+    background-image: url(images/corgi.jpg);
+    background-size: cover;
+    border-radius: 4%;
+    border: solid #1fa9c4;
+    border-width: 8px;
+    
+}
+
+#content {
+
+    grid-area: main2;
+    background-color: rgba(223, 223, 223, 0.692);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+    padding: 5px;
+    overflow: hidden;
+    text-align: left;
+    border-radius: 4px;
+       
+}
+
+content, h1, h2, h3, p, q {
+
+    display: block;
+    margin: 20px;
+      
+    
+}
+
+#sidebar {
+
+    display: none;
+}
+
+
+#footer {
+
+    display: flex;
+    grid-area: foot;
+    
+}  
+
+
+
+
+@media(min-width:900px) {
+
+    .container {
+        display: grid;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        grid-auto-rows: minmax(200px, auto);
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas:
+        "head head head"
+        "nav nav nav"
+        "main main main2"
+        "main3 main3 main2"
+        "foot foot foot"
+        ;
+        grid-gap: 10px;
+        
+    }
+    
+    .box {
+
+        align-items: center;
+        justify-content: center;
+       
+    }
+
+    
+    #header {
+        
+        display: flex;
+        grid-area: head;
+        font-family: 'Passion One', cursive;
+        font-size: 4em;
+        text-shadow: 4px 4px #000000;
+        color: #1fa9c4;
+        
+     
+    
+    }
+    
+    #navbar {
+
+        display: flex;
+        grid-area: nav;
+        font-family: 'Passion One', cursive;
+        font-size: 25px;
+       
+    
+    }
+
+    #navbar, a:visited {
+
+        color: #1fa9c4;
+    }
+
+    .navbuttons, a {
+
+        margin: 40px;
+        text-decoration: none;
+        color: #1fa9c4;
+    }
+    
+    #pic {
+    
+        grid-area: main;
+        background-image: url(images/corgi.jpg);
+        background-size: cover;
+        border-radius: 4%;
+        border: solid #1fa9c4;
+        border-width: 8px;
+        
+    
+    }
+    
+    #sidebar {
+
+        display: grid;
+        grid-area: main2;
+        border-width: 8px;
+        grid-template-columns: 1fr;
+        grid-auto-rows: minmax(300px, auto);
+        color:white;
+        grid-template-areas: 
+        "top"
+        "middle"
+        "bottom"
+        "bottom2";
+        
+    }
+
+    
+
+    .avcard {
+
+        margin: 30px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        transition: 0.3s;
+        border-radius: 4px;
+    }
+
+    .avcard, img {
+
+        margin-top: 20px;
+        margin-left: 55px;
+        margin-right: 30px;
+        width: 60%;
+    }
+    
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    }
+    
+    .avatarcontainer {
+        padding: 10px 16px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 15px;
+        margin-left: 40px;
+        height: 120px;
+        color: black;
+
+    }
+
+    #box1 {
+
+        grid-area: top;
+        margin-top: 0px;
+        margin-left: 60px;
+        border-radius: 4%;
+        height: 450px;
+        width: 290px;
+        
+
+    }
+
+    
+
+    #box2 {
+
+        grid-area: middle;
+        border-radius: 4%;
+        background-image: url(images/cat.jpg);
+        background-size: cover;
+        width: 290px;
+        height: 250px;
+        box-shadow: 5px 10px 5px #41414194;
+        
+    }
+
+    #box3 {
+
+        grid-area: bottom;
+        border-radius: 4%;
+        background-image: url(images/budgie.jpg);
+        background-size: cover;
+        width: 290px;
+        height: 250px;
+        box-shadow: 5px 10px 5px #41414194;
+    }
+
+    #box4 {
+
+        grid-area: bottom2;
+        border-radius: 4%;
+        background-image: url(images/turtle.jpg);
+        background-size: cover;
+        width: 290px;
+        height: 250px;
+        box-shadow: 5px 10px 5px #41414194;
+    }
+
+    .nest {
+        display: flex;
+        margin: 55px;
+        justify-content: center;
+        font-size: 30px;
+        font-family: 'Passion One', cursive;
+    }
+
+    .nest, a:visited {
+
+        color: inherit;
+    }
+    
+    #content {
+
+        
+        grid-area: main3;
+        padding: 5px;
+        overflow: hidden;
+        font-size: 20px;
+        text-align: left;
+        
+        
+    }
+
+
+    
+    #footer {
+    
+        display: flex;
+        grid-area: foot;
+        
+    }
+
+} 
+
+
+
