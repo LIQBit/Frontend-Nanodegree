@@ -1,0 +1,25 @@
+#header {
+
+    grid-area: head;
+    font-family: 'Passion One', cursive;
+    text-shadow: 4px 4px #000000;
+    color: #1fa9c4;
+    font-size: 25px;
+ 
+
+}
+
+#navbar {
+    display: flex;
+    grid-area: nav;
+    font-family: 'Passion One', cursive;
+    font-size: 15px;
+
+}
+
+.navbuttons, a {
+
+    margin: 10px;
+    text-decoration: none;
+    color: #1fa9c4;
+}

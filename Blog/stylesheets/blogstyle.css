@@ -53,14 +53,17 @@
 }
 
 #pic {
-    
+    display: flex;
+    position: relative;
     grid-area: main;
     background-image: url(images/corgi.jpg);
+    background-repeat: no-repeat;
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
     border-width: 8px;
-    
+    justify-content: flex-end;
+
 }
 
 #content {
@@ -75,6 +78,15 @@
     text-align: left;
     border-radius: 4px;
        
+}
+
+.caption {
+
+    position: absolute;
+    bottom: 0;
+    color: white;
+    margin-right: 10px;
+    
 }
 
 content, h1, h2, h3, p, q {
@@ -165,16 +177,30 @@ content, h1, h2, h3, p, q {
     }
     
     #pic {
-    
+        display: flex;
+        position: relative;
         grid-area: main;
         background-image: url(images/corgi.jpg);
+        background-repeat: no-repeat;
         background-size: cover;
         border-radius: 4%;
         border: solid #1fa9c4;
         border-width: 8px;
-        
+        justify-content: flex-end;
     
     }
+
+    .caption {
+
+       
+        position: absolute;
+        bottom: 0;
+        color: white;
+        margin-right: 10px;
+        
+    }
+
+    
     
     #sidebar {
 

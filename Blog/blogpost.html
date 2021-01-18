@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="utf-8">
-        <link rel="stylesheet" href="blogstyle.css">
+        <link rel="stylesheet" href="stylesheets/blogstyle.css">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -19,8 +20,12 @@
                     <a href="blog.html">Blog</a>
                 </div>
             </div>
-            <div class="box" id="pic"></div>
-            <div class="box" id="content">
+            <div class="box" id="pic">
+                <div class="caption"><figcaption>Evil Corgi</figcaption></div>
+            </div>
+            
+            
+            <article class="box" id="content">
                 <h1>Corgi Now Controls Entire West-Side</h1>
                 <p>
                     Sed ut perspiciatis unde omnis
@@ -33,7 +38,7 @@
                 
                 
 
-                    Nemo enim ipsam voluptatem
+                    <i>Nemo enim ipsam voluptatem</i>
                     quia voluptas sit aspernatur aut odit
                     aut fugit, sed quia consequuntur magni
                     dolores eos qui ratione voluptatem sequi
@@ -65,7 +70,7 @@
 
                 <h3>A Warning to Anyone Entering the West-Side</h3>
                 <p>Nemo enim ipsam voluptatem
-                    quia voluptas sit aspernatur aut odit
+                    quia <u>voluptas sit aspernatur</u> aut odit
                     aut fugit, sed quia consequuntur magni
                     dolores eos qui ratione voluptatem sequi
                     ut labore et dolore magnam aliquam quaerat
@@ -74,15 +79,17 @@
                     laboriosam, nisi ut aliquid ex ea commodi consequatur?
                     Quis autem vel eum iure reprehenderit qui in ea
                     voluptate velit esse quam nihil molestiae consequatur,</p>
+            </article>
+            
 
                    
             
-            </div>
+            
 
             <div class="box" id="sidebar">
 
                 <div class="avcard" id="box1">
-                    <img src="images/avatar.jpg" alt="Avatar">
+                    <img src="stylesheets/images/avatar.jpg" alt="Avatar">
                     <div class="avatarcontainer">
                         <h4></h4><b>Leigh Bitossi</b></h4>
                         <p>Front-end Developer</p>

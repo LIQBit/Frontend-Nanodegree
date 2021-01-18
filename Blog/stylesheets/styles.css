@@ -1,26 +1,6 @@
-.card {
-    display: grid;
-    width: 80vw;
-    height: 100%;
-    margin: auto;
-    color: white;
-    grid-template-rows: 130px 60px 330px 330px 330px 330px 330px 330px 70px;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-areas:
-    "head head head"
-    "nav nav nav"
-    "main main main"
-    "main2 main2 main2"
-    "main3 main3 main3"
-    "main4 main4 main4"
-    "main5 main5 main5"
-    "main6 main6 main6"
-    "foot foot foot";
-    grid-gap: 10px;
-   
-}
-
-
+@import "./card.css";
+@import "./headnav.css";
+@import "./postsfooter.css";
 
 .box {
     display: flex;
@@ -31,131 +11,6 @@
 
 
 
-#header {
-
-    grid-area: head;
-    font-family: 'Passion One', cursive;
-    text-shadow: 4px 4px #000000;
-    color: #1fa9c4;
-    font-size: 40px;
- 
-
-}
-
-#navbar {
-    display: flex;
-    grid-area: nav;
-    font-family: 'Passion One', cursive;
-    font-size: 18px;
-
-}
-
-.navbuttons, a {
-
-    margin: 20px;
-    text-decoration: none;
-    color: #1fa9c4;
-}
-
-#post1 {
-    
-    grid-area: main;
-    background-image: url(images/corgi.jpg);
-    background-size: cover;
-    border-radius: 4%;
-    border: solid #1fa9c4;
-    border-width: 8px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Passion One', cursive;
-    
-    
-
-}
-
-#post1, a:visited {
-
-    color:inherit;
-}
-
-#post2 {
-
-    grid-area: main2;
-    background-image: url(images/cat.jpg);
-    background-size: cover;
-    border-radius: 4%;
-    border: solid #1fa9c4;
-    border-width: 8px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Passion One', cursive;
-   
-    
-}
-
-#post3 {
-
-    grid-area: main3;
-    background-image: url(images/budgie.jpg);
-    background-size: cover;
-    border-radius: 4%;
-    border: solid #1fa9c4;
-    border-width: 8px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Passion One', cursive;
-    
-}
-
-#post4 {
-
-    grid-area: main4;
-    background-image: url(images/hamster.jpg);
-    background-size: cover;
-    border-radius: 4%;
-    border: solid #1fa9c4;
-    border-width: 8px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Passion One', cursive;
-    
-}
-
-#post5 {
-
-    grid-area: main5;
-    background-image: url(images/turtle.jpg);
-    background-size: cover;
-    border-radius: 4%;
-    border: solid #1fa9c4;
-    border-width: 8px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Passion One', cursive;
-    
-    
-}
-
-#post6 {
-
-    grid-area: main6;
-    background-image: url(images/brick.jpg);
-    background-size: cover;
-    border-radius: 4%;
-    border: solid #1fa9c4;
-    border-width: 8px;
-    color: white;
-    font-size: 30px;
-    font-family: 'Passion One', cursive;
-    
-    
-}
-
-#footer {
-
-    grid-area: foot;
-    
-}
 
 
 
@@ -167,7 +22,6 @@
         height: 100vh;
         margin: auto;
         grid-template-rows: 200px 50px 300px 300px 100px;
-        /*grid-auto-rows: max-content, auto;*/
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas:
         "head head head"

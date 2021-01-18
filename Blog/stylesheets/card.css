@@ -1,0 +1,21 @@
+.card {
+    display: grid;
+    width: 80vw;
+    height: 100%;
+    margin: auto;
+    color: white;
+    grid-template-rows: 130px 60px 330px 330px 330px 330px 330px 330px 70px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+    "head head head"
+    "nav nav nav"
+    "main main main"
+    "main2 main2 main2"
+    "main3 main3 main3"
+    "main4 main4 main4"
+    "main5 main5 main5"
+    "main6 main6 main6"
+    "foot foot foot";
+    grid-gap: 10px;
+   
+}
