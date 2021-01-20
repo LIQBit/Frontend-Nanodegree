@@ -24,7 +24,7 @@
     
 }
 
-#header {
+header {
 
     display: flex;
     grid-area: head;
@@ -32,6 +32,8 @@
     text-shadow: 4px 4px #000000;
     color: #1fa9c4;
     font-size: 27px;
+    align-items: center;
+    justify-content: center;
 
 }
 
@@ -155,10 +157,12 @@ content, h1, h2, h3, p, q {
     
 }
 
-#footer {
+footer {
 
     display: flex;
     grid-area: foot;
+    align-items: center;
+    justify-content: center;
     
 }  
 
@@ -191,7 +195,7 @@ content, h1, h2, h3, p, q {
     }
 
     
-    #header {
+    header {
         
         display: flex;
         grid-area: head;
@@ -199,6 +203,8 @@ content, h1, h2, h3, p, q {
         font-size: 4em;
         text-shadow: 4px 4px #000000;
         color: #1fa9c4;
+        align-items: center;
+        justify-content: center;
         
      
     
@@ -400,10 +406,12 @@ content, h1, h2, h3, p, q {
         
     }
 
-    #footer {
+    footer {
     
         display: flex;
         grid-area: foot;
+        align-items: center;
+        justify-content: center;
         
     }
 

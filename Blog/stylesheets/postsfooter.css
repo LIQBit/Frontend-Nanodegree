@@ -1,7 +1,7 @@
 #post1 {
     
     grid-area: main;
-    background-image: url(images/corgi.jpg);
+    background-image: url(../images/corgi.jpg);
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
@@ -22,7 +22,7 @@
 #post2 {
 
     grid-area: main2;
-    background-image: url(images/cat.jpg);
+    background-image: url(../images/cat.jpg);
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
@@ -37,7 +37,7 @@
 #post3 {
 
     grid-area: main3;
-    background-image: url(images/budgie.jpg);
+    background-image: url(../images/budgie.jpg);
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
@@ -51,7 +51,7 @@
 #post4 {
 
     grid-area: main4;
-    background-image: url(images/hamster.jpg);
+    background-image: url(../images/hamster.jpg);
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
@@ -65,7 +65,7 @@
 #post5 {
 
     grid-area: main5;
-    background-image: url(images/turtle.jpg);
+    background-image: url(../images/turtle.jpg);
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
@@ -80,7 +80,7 @@
 #post6 {
 
     grid-area: main6;
-    background-image: url(images/brick.jpg);
+    background-image: url(../images/brick.jpg);
     background-size: cover;
     border-radius: 4%;
     border: solid #1fa9c4;
@@ -92,8 +92,11 @@
     
 }
 
-#footer {
+footer {
 
+    display: flex;
     grid-area: foot;
+    align-items: center;
+    justify-content: center;
     
 }

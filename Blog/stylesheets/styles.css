@@ -37,13 +37,16 @@
     }
 
     
-    #header {
-    
+    header {
+        
+        display: flex;
         grid-area: head;
         font-family: 'Passion One', cursive;
         font-size: 4em;
         text-shadow: 4px 4px #000000;
         color: #1fa9c4;
+        align-items: center;
+        justify-content: center;
         
     }
     
@@ -128,9 +131,12 @@
         
     }
 
-    #footer {
-    
+    footer {
+        
+        display: flex;
         grid-area: foot;
+        align-items: center;
+        justify-content: center;
         
     }
 
